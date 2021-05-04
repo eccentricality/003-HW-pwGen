@@ -4,6 +4,7 @@
     --ssBlueLight: #7395AE;
     --ssBlueDark: #557A95;
     --ssBeige: #B1A296;
+    --ssWhite: #FFFFFF33;
 
 }
 
@@ -18,15 +19,22 @@ body {
     font-family: 'Ubuntu', sans-serif;
 }
 
+.title {
+    margin: 0;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size:x-large;
+}
+
 h1, h3 {
     padding: 10px;
 }
 
-.entireSection {
+.container {
     background-color: var(--ssAqua);
     padding: 50px;
     border-radius: 10px;
-    border: 2px solid black;
+    border: 2px solid var(--ssBeige);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,7 +43,48 @@ h1, h3 {
 
 .centerElement {
     display: block;
+    margin-top: 15px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+}
+
+.inputField {
+    width: 40px;
+}
+
+.passwordOutput {
+    background-color: var(--ssBlueDark);
+    color: var(--ssBeige);
+    font-size: larger;
+    padding: 15px;
+    border: 3px solid var(--ssBeige);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    height: 100px;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    word-break: break-all;
+}
+
+label {
+    font-weight: bold;
+}
+
+.generateButton {
+    width: 300px;
+    background-color: transparent;
+    border: 3px solid var(--ssBeige);
+    border-radius: 10px;
+    color: white;
+    padding: 5px 5px;
+    font-weight: bold;
+}
+
+.generateButton:hover {
+    color: black;
+    box-shadow: 0 5px 15px var(--ssBeige);
+    background-color: var(--ssWhite);
 }

@@ -12,17 +12,17 @@
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     </head>
     <body>
-        <section class="entireSection">
+        <section class="container">
 
-            <h1>Password Generator</h1>
+            <h1 class="title">Password Generator</h1>
 
-            <h3>password</h3>
+            <h3 class="passwordOutput">password</h3>
 
             <form>
 
                 <label>Password Length (max 128): </label>
 
-                <input type="number" min="1" max="128" value="50" id="passLengthCount">
+                <input type="number" min="1" max="128" value="50" id="passLengthCount" class="inputField">
 
                 <label class="centerElement"><br/>Choose Your Options:</label>
                 
@@ -35,7 +35,7 @@
                 <label>Symbols</label>
                 <input type="checkbox" id="symbolsInclusion"/>
 
-                <button type="submit" class="centerElement">Generate <br/>Your Password</button>
+                <button type="submit" class="centerElement generateButton">Generate <br/>Your Password</button>
 
             </form>
 
