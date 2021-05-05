@@ -1,46 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang = "en">
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset = "utf-8">
+        <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
         <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./reset.css">
-        <link rel="stylesheet" href="./style.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+        <meta name = "description" content = "">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1">
+        <link rel = "stylesheet" href = "./reset.css">
+        <link rel = "stylesheet" href = "./style.css">
+        <link rel = "preconnect" href = "https://fonts.gstatic.com">
+        <link href = "https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel = "stylesheet">
     </head>
     <body>
-        <section class="container">
+        <section class = "container">
 
-            <h1 class="title">Password Generator</h1>
+            <h1 class = "title">Password Generator</h1>
 
-            <h3 class="passwordOutput">password</h3>
+            <h3 id = "generatedPass" class = "passwordOutput">password</h3>
 
-            <form id="passwordGenerator">
+            <form id="passwordForm">
 
-                <label>Password Length (max 128): </label>
+                <label>Password Length (min: 8/max: 128): </label>
 
-                <input type="number" min="1" max="128" value="50" id="passLengthCount" class="inputField">
+                <input type = "number" min = "8" max = "128" value = "8" id = "passLengthCount" class = "inputField">
 
-                <label class="centerElement"><br/>Choose Your Options:</label>
+                <label class = "centerElement"><br/>Choose Your Options:</label>
                 
                 <label><br/>Uppercase</label>
-                <input type="checkbox" id="upperCaseInclusion"/>
+                <input type = "checkbox" id = "upperCaseInclusion"/>
 
                 <label>Numbers</label>
-                <input type="checkbox" id="numbersInclusion"/>
+                <input type = "checkbox" id = "numbersInclusion"/>
 
                 <label>Symbols</label>
-                <input type="checkbox" id="symbolsInclusion"/>
+                <input type = "checkbox" id = "symbolsInclusion"/>
 
-                <button type="submit" class="centerElement generateButton">Generate <br/>Your Password</button>
+                <button type = "submit" class = "centerElement generateButton">Generate <br/>Your Password</button>
 
             </form>
 
         </section>
         
-        <script src="./script.js" async defer></script>
+        <script src = "./script.js" async defer></script>
     </body>
 </html>
