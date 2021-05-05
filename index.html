@@ -11,21 +11,27 @@
         <link rel = "preconnect" href = "https://fonts.gstatic.com">
         <link href = "https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel = "stylesheet">
     </head>
+    
+    <!-- overall nothing too impressive to comment about, html portion was fairly straightforward, most work was done when generating id and class to link script -->
     <body>
         <section class = "container">
 
             <h1 class = "title">Password Generator</h1>
-
-            <h3 id = "generatedPass" class = "passwordOutput">password</h3>
+            
+            <!-- some id and class was being generated on as need basis while working on script, only ones generated at beginning were ones used for css -->
+            <h2 id = "generatedPass" class = "passwordOutput">password</h2>
 
             <form id="passwordForm">
 
                 <label>Password Length (min: 8/max: 128): </label>
 
+                <!-- makes it nice and clean predetermining min max along with min value of 8 to start -->
                 <input type = "number" min = "8" max = "128" value = "8" id = "passLengthCount" class = "inputField">
 
+                <!-- added some breaks below for form factor, as mentioned in css, may reassess what type of reset.css i use in future, or maybe not -->
                 <label class = "centerElement"><br/>Choose Your Options:</label>
                 
+                <!-- check boxes and option to adjust on the fly was much more attractive than alerts -->
                 <label><br/>Uppercase</label>
                 <input type = "checkbox" id = "upperCaseInclusion"/>
 

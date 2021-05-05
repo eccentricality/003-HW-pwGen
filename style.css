@@ -1,3 +1,4 @@
+/* found color scheme I liked and generated vars to be used in css */
 :root {
     --ssGray: #5D5C61;
     --ssAqua: #379683;
@@ -8,6 +9,7 @@
 
 }
 
+/* a little more adjusting took place than i wanted, may need to double check the type of reset.css i use next time */
 body {
     background-color: var(--ssGray);
     margin: 0;
@@ -26,10 +28,11 @@ body {
     font-size:x-large;
 }
 
-h1, h3 {
+h1, h2 {
     padding: 10px;
 }
 
+/* contains everything regarding the main portion of the generator */
 .container {
     background-color: var(--ssAqua);
     padding: 50px;
@@ -53,6 +56,7 @@ h1, h3 {
     width: 40px;
 }
 
+/* this part took a bit adjusting, couple of tweaks made after finishing script as well */
 .passwordOutput {
     background-color: var(--ssBlueDark);
     color: var(--ssBeige);
@@ -72,6 +76,7 @@ label {
     font-weight: bold;
 }
 
+/* found ideas online to give nice effect to go along with hover */
 .generateButton {
     width: 300px;
     background-color: transparent;
@@ -82,6 +87,7 @@ label {
     font-weight: bold;
 }
 
+/* simple hover effect, may tweak for more wow factor in the future */
 .generateButton:hover {
     color: black;
     box-shadow: 0 5px 15px var(--ssBeige);
